@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meritometrics — Curiosity Meets Craftsmanship">
+    <title>Meritometrics • Curiosity Meets Craftsmanship</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&display=swap');
+        
+        :root {
+            --tw-color-primary: #00d4ff;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+        }
+
+        .glow {
+            text-shadow: 0 0 30px rgb(0 212 255);
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+
+    <!-- Navbar -->
+    <nav class="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-2xl flex items-center justify-center text-white font-bold text-xl">M</div>
+                <span class="heading-font text-3xl font-semibold tracking-tighter">meritometrics</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#videos" class="hover:text-cyan-400 transition-colors">Videos</a>
+                <a href="#craft" class="hover:text-cyan-400 transition-colors">Craftsmanship</a>
+                <a href="https://www.youtube.com/@meritometrics" target="_blank" 
+                   class="flex items-center gap-x-2 px-6 py-2.5 bg-white text-zinc-950 rounded-3xl font-semibold hover:scale-105 transition-all">
+                    <i class="fab fa-youtube"></i>
+                    <span>Watch on YouTube</span>
+                </a>
+            </div>
+
+            <button onclick="toggleMobileMenu()" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden border-t border-zinc-800 bg-zinc-950 px-6 py-4">
+            <div class="flex flex-col gap-y-4 text-sm">
+                <a href="#about" class="py-2">About Meritometrics</a>
+                <a href="#videos" class="py-2">Latest Videos</a>
+                <a href="#craft" class="py-2">Curiosity Meets Craftsmanship</a>
+                <a href="https://www.youtube.com/@meritometrics" target="_blank" 
+                   class="mt-4 flex items-center justify-center gap-x-3 bg-white text-zinc-950 py-4 rounded-3xl font-semibold">
+                    <i class="fab fa-youtube text-xl"></i>
+                    Subscribe on YouTube
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero-bg pt-24 pb-20 md:pt-32 md:pb-28">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-x-2 bg-zinc-900 border border-cyan-400/30 text-cyan-400 text-sm font-medium px-5 py-2 rounded-3xl mb-8">
+                <i class="fas fa-sparkles"></i>
+                NOW LIVE ON YOUTUBE
+            </div>
+            
+            <h1 class="heading-font text-7xl md:text-8xl font-bold tracking-tighter leading-none glow mb-6">
+                Curiosity.<br>Meets.<br>Craftsmanship.
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-10">
+                Deep dives into facts, ideas, and experiences. 
+                Where curiosity is the fuel and excellence is the standard.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://www.youtube.com/@meritometrics" target="_blank"
+                   class="flex items-center justify-center gap-x-3 bg-white hover:bg-cyan-400 text-zinc-950 hover:text-white font-semibold text-lg px-10 py-6 rounded-3xl transition-all duration-300">
+                    <i class="fab fa-youtube text-3xl"></i>
+                    <span>Watch the latest video</span>
+                </a>
+                
+                <a href="https://x.com/realGeorgeAngel" target="_blank"
+                   class="flex items-center justify-center gap-x-3 border border-zinc-700 hover:border-zinc-400 font-medium text-lg px-8 py-6 rounded-3xl transition-all">
+                    <i class="fab fa-x-twitter"></i>
+                    Follow on 𝕏
+                </a>
+            </div>
+            
+            <div class="mt-16 text-xs uppercase tracking-[2px] text-zinc-500 flex items-center justify-center gap-x-8">
+                <div>Featured on</div>
+                <div class="flex gap-x-8 text-zinc-400">
+                    <span class="font-medium">YouTube</span>
+                    <span class="font-medium">𝕏</span>
+                    <span class="font-medium">Substack</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="py-20 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-7">
+                    <h2 class="heading-font text-5xl font-semibold tracking-tighter mb-6">Hi, I'm George.</h2>
+                    <p class="text-xl text-zinc-300 leading-relaxed">
+                        Welcome to Meritometrics — a space where I explore the world through data, history, science, and human stories. 
+                        No fluff. No filler. Just deep, well-crafted insights that actually matter.
+                    </p>
+                    <p class="mt-6 text-zinc-400">
+                        Every video is built with the same philosophy: <span class="text-cyan-400 font-medium">curiosity meets craftsmanship</span>.
+                    </p>
+                </div>
+                <div class="md:col-span-5">
+                    <div class="bg-zinc-800 border border-zinc-700 rounded-3xl p-8 text-center">
+                        <div class="text-6xl mb-4">📐</div>
+                        <h3 class="text-2xl font-semibold mb-2">Merit + Metrics</h3>
+                        <p class="text-zinc-400">Measuring truth, excellence, and what actually works.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Videos -->
+    <section id="videos" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-end justify-between mb-10">
+                <h2 class="heading-font text-5xl font-semibold tracking-tighter">Latest Videos</h2>
+                <a href="https://www.youtube.com/@meritometrics/videos" target="_blank" 
+                   class="text-cyan-400 hover:text-white flex items-center gap-x-2 font-medium">
+                    View all on YouTube 
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Video 1 -->
+                <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-cyan-400/50 transition-all">
+                    <div class="aspect-video bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center text-6xl relative">
+                        <span class="text-4xl">📊</span>
+                        <div class="absolute bottom-4 right-4 bg-black/70 text-xs px-3 py-1 rounded-full">12:45</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-semibold text-lg group-hover:text-cyan-400 transition-colors">The Real Cost of "Free" — A Data Deep Dive</h4>
+                        <p class="text-sm text-zinc-400 mt-2">What the numbers actually say about free services and your attention.</p>
+                        <div class="text-xs text-zinc-500 mt-6">3 days ago • 18K views</div>
+                    </div>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-cyan-400/50 transition-all">
+                    <div class="aspect-video bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center text-6xl relative">
+                        <span class="text-4xl">🧬</span>
+                        <div class="absolute bottom-4 right-4 bg-black/70 text-xs px-3 py-1 rounded-full">18:22</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-semibold text-lg group-hover:text-cyan-400 transition-colors">How One Metric Changed History Forever</h4>
+                        <p class="text-sm text-zinc-400 mt-2">The single number that quietly shaped the modern world.</p>
+                        <div class="text-xs text-zinc-500 mt-6">1 week ago • 42K views</div>
+                    </div>
+                </div>
+                
+                <!-- Video 3 -->
+                <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-cyan-400/50 transition-all">
+                    <div class="aspect-video bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center text-6xl relative">
+                        <span class="text-4xl">⚡</span>
+                        <div class="absolute bottom-4 right-4 bg-black/70 text-xs px-3 py-1 rounded-full">9:58</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-semibold text-lg group-hover:text-cyan-400 transition-colors">Why Most Productivity Advice Is Wrong</h4>
+                        <p class="text-sm text-zinc-400 mt-2">The data-backed truth about getting things done.</p>
+                        <div class="text-xs text-zinc-500 mt-6">2 weeks ago • 31K views</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craftsmanship -->
+    <section id="craft" class="py-20 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="heading-font text-5xl font-semibold tracking-tighter mb-4">Built with care.</h2>
+            <p class="text-xl text-zinc-400 max-w-xl mx-auto">Every frame, every script, every chart is crafted with intention.</p>
+            
+            <div class="mt-16 grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-left">
+                    <div class="text-cyan-400 text-5xl mb-4">01</div>
+                    <h4 class="font-semibold text-2xl mb-2">Deep Research</h4>
+                    <p class="text-zinc-400">I go far beyond surface-level takes. Sources are verified. Numbers are real.</p>
+                </div>
+                <div class="text-left">
+                    <div class="text-cyan-400 text-5xl mb-4">02</div>
+                    <h4 class="font-semibold text-2xl mb-2">Visual Excellence</h4>
+                    <p class="text-zinc-400">Clean animations, beautiful charts, and thoughtful editing.</p>
+                </div>
+                <div class="text-left">
+                    <div class="text-cyan-400 text-5xl mb-4">03</div>
+                    <h4 class="font-semibold text-2xl mb-2">No Filler</h4>
+                    <p class="text-zinc-400">Zero clickbait. Only substance. You leave smarter every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="bg-gradient-to-r from-cyan-500 to-blue-600 py-16 text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-4xl font-semibold text-white heading-font tracking-tighter">Ready to level up your thinking?</h2>
+            <p class="text-white/80 mt-4 text-xl">Join 50,000+ curious minds on YouTube.</p>
+            
+            <a href="https://www.youtube.com/@meritometrics?sub_confirmation=1" target="_blank"
+               class="mt-10 inline-flex items-center gap-x-4 bg-white text-zinc-950 hover:scale-110 transition-all font-semibold text-2xl px-16 py-8 rounded-3xl">
+                <i class="fab fa-youtube text-4xl"></i>
+                SUBSCRIBE FREE
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 text-center text-zinc-500 text-sm">
+            <div class="flex justify-center gap-x-8 mb-8">
+                <a href="https://x.com/realGeorgeAngel" target="_blank" class="hover:text-zinc-300"><i class="fab fa-x-twitter text-2xl"></i></a>
+                <a href="https://www.youtube.com/@meritometrics" target="_blank" class="hover:text-zinc-300"><i class="fab fa-youtube text-2xl"></i></a>
+                <a href="#" class="hover:text-zinc-300"><i class="fas fa-envelope text-2xl"></i></a>
+            </div>
+            <p>© 2026 Meritometrics • Made with curiosity in San Mateo, California</p>
+            <p class="mt-2 text-xs">Hosted on GitHub Pages • Powered by pure craftsmanship</p>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script already loaded
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+        
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-2xl', 'shadow-cyan-500/10');
+            } else {
+                nav.classList.remove('shadow-2xl', 'shadow-cyan-500/10');
+            }
+        });
+        
+        console.log('%c✅ Meritometrics index.html loaded successfully!', 'color:#00d4ff; font-family:monospace;');
+    </script>
+</body>
+</html>
